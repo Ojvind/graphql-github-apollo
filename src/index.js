@@ -7,7 +7,7 @@ const client = new ApolloClient({
   request: operation => {
     operation.setContext({
       headers: {
-        authorization: `Bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
+        authorization: `Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}`,
       },
     });
   },
